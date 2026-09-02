@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---Title of webpage-->
+    <title>Responsive Website Project</title>
+
+    <!---Adding my css link--->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!---Add a main-->
+    <main>
+       
+
+        <!---<Section> tag always goes inside of <main>-->
+
+            <!---Adding two sections for two boxes results and summary bc they will have their own box-->
+            <section class="result">
+             <h2>Your Result</h2>
+
+             <!---I will use div for styling purposes for my container-->
+                <div class="score-circle">
+                    <!---I will use <span> to group text for target styling in css-->
+                    <span class="score-number">76</span>
+                    <span class="score-total">of 100</span>
+                </div>
+                <h2>Great</h2>
+                    <p>You scored higher than 65% of the people who have taken these tests.</p>
+            </section>
+
+
+            <section class="summary">
+                <h2>Summary</h2>
+
+                <div class="summary-score">
+                    <!---Will put a ul and li to list all summaries--->
+
+                    <ul>
+
+                        <!---Reaction section-->
+
+
+                        <li class="summary-reaction">
+                            <div class="item-title">
+                                <span>Reaction</span>
+                            </div>
+                            <p class="item-score"><span class="user-score">80</span> / 100</p>
+                        </li>
+
+
+                        <!---Memory section-->
+
+
+                        <li class="summary-memory">
+                            <div class="item-title">
+                                <span>Memory</span>
+                            </div>
+                            <p class="item-score"><span class="user-score">92</span> / 100</p>
+                        </li>
+
+
+                        <!---Verbal section-->
+
+                        <li class="summary-Verbal">
+                            <div class="item-title">
+                                <span>verbal</span>                         
+                            </div>
+                        <p class="item-score"><span class="user-score">61</span> / 100</p>
+
+                        <!---Visual Section-->
+
+                        <li class="summary-Visual">
+                            <div class="item-title">
+                                <span>Visual</span>
+                            </div>
+                            <p class="item-score"><span class="user-score">73</span> / 100</p>
+                    </ul>
+                </div>
+
+                <!---I will now add a button. because this isnt a form we using a input button--->
+                <button type="button" class="btn-continue">Continue</button>
+            </section>
+            
+    </main>
+
+    <footer>
+        <!---Frontend Mentor attribution-->
+    </footer>
+    
+</body>
+</html>
