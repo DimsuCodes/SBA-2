@@ -7,7 +7,6 @@ main {
     width: 100%;
     background-color: white;
     border-radius: 32px;
-    border: border-box;
     box-shadow: 0 20px 30px rgba(0,0,0,0.1);
     box-sizing:border-box;
     font-size: 18px;
@@ -98,7 +97,6 @@ h1 {
         color: hsl(0, 100%, 67%);
         border: none;
         border-radius: 10px;
-        padding: 3px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         
     }
@@ -110,7 +108,6 @@ h1 {
         color: hsl(39, 100%, 56%);
         border: none;
         border-radius: 10px;
-        padding: 3px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
     
@@ -121,18 +118,16 @@ h1 {
         color: hsl(166, 100%, 37%);
         border: none;
         border-radius: 10px;
-        padding: 3px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
 
      /*memory*/
 
     .summary-visual {
-        background-color:  hsl(234, 85%, 45%, 0.1);
-        color:  hsl(234, 85%, 45%);
+        background-color:  hsla(234, 85%, 45%, 0.1);
+        color:  hsl(234, 65%, 52%);
         border: none;
         border-radius: 10px;
-        padding: 3px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
 
@@ -170,7 +165,7 @@ h1 {
     .score-circle {  
         width: 140px;
         height: 140px;
-        border-radius: 50%;;
+        border-radius: 50%;
         background-color: hsla(256, 72%, 46%, 1);
         display: flex;
         flex-direction: column;
@@ -205,7 +200,12 @@ h1 {
     .item-score {
         color: hsla(224, 30%, 27%, 0.5);
 
+    }
 
+    .item-title {
+        display: flex;
+        align-items: center;
+        gap: 12px;
     }
 
 
@@ -213,3 +213,20 @@ h1 {
     .user-score {
         color: hsl(224, 30%, 27%);
     }
+
+    @media (max-width: 650px) {
+  .canvas-container {
+    padding: 0;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    border-radius: 0 0 30px 30px;
+    max-width: 375px;
+  }
+
+  .result {
+    border-radius: 0 0 30px 30px;
+    padding: 30px 40px 40px;
+  }
+}
