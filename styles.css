@@ -1,0 +1,116 @@
+/* making the main a 2-colum grid*/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /*Two equal columns*/
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+    box-sizing:border-box;
+    font-size: 18px;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.result {
+
+    background-color: hsl(234, 85%, 45%);
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+/* We named the right side of our class "summary" so this is what we will be editing and will put  .summary"*/
+/* we use "." before class as a identifier*/
+.summary {
+
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(224, 30%, 27%);
+    padding: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    background-color: rgb(39, 40, 58);
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+    
+
+
+    ul li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 16px;
+        margin-bottom: 16px  /*adds space between each row*/
+
+    }
+        /*reaction*/
+
+    .summary-reaction {
+        background-color: hsla(0, 100%, 67%, 0.1);
+        color: hsl(0, 100%, 67%);
+        border: none;
+        border-radius: 10px;
+        padding: 3px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        
+    }
+
+    /*memory*/
+
+    .summary-memory {
+        background-color: hsla(39, 100%, 56%, 0.1);
+        color: hsl(39, 100%, 56%);
+        border: none;
+        border-radius: 10px;
+        padding: 3px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+     /*verbal*/
+
+    .summary-verbal {
+        background-color: hsla(166, 100%, 37%, 0.1);
+        color: hsl(166, 100%, 37%);
+        border: none;
+        border-radius: 10px;
+        padding: 3px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+     /*memory*/
+
+    .summary-visual {
+        background-color:  hsl(234, 85%, 45%, 0.1);
+        color:  hsl(234, 85%, 45%);
+        border: none;
+        border-radius: 10px;
+        padding: 3px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-continue {
+        background-color: hsl(224, 30%, 27%);
+        color: hsl(0, 0%, 100%);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        padding: 16px;
+    }
